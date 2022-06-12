@@ -1,0 +1,8 @@
+image: monitor:5000/howest-html-validator:20.6.30
+stages:
+	- QA
+   
+validateHTML:
+  stage: QA 
+  script:
+    - vnu --Werror --skip-non-html ./

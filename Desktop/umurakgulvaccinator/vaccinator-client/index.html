@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Howest Vaccination Portal</title>
+    <link rel="stylesheet" href="assets\css\reset.css">
+    <link rel="stylesheet" href="assets\css\screen.css">
+    <script src="assets\js\script.js"></script>
+</head>
+<body>
+    <div id = "foreground">
+        <header><h1>Howest Vaccination Portal</h1></header>
+        <div id = "info">
+            <h2>Current statistics</h2>
+            <img src="vaccination.png" alt="vax" width="500" height="500">
+            <p id = "stat">Placeholder TextPlaceholder TextPlaceholder TextPlaceholder Text</p>
+        </div>
+        <form>
+            <h2>Book your vaccination today!</h2>
+            <label for="from">Patient name:</label>
+            <input type="text" id="fullname">
+            <label for="vaccine">Vaccine:</label>
+            <select id="vaxtype"></select>
+            <label for="date">Vaccination date:</label>
+            <input type="date" id="date">
+            <label for="lastname">Any allergies?</label>
+            <input type="text" id="allergies">
+            <p id = "blank"></p>
+            <input type="submit" value="Add booking">
+            <div id="errors"></div>
+        </form>
+        <footer>
+            <hr>
+            <p id= "credits">©Howest 2021 - Images courtesy of Freepik.com</p>
+        </footer>
+    </div>
+</body>
+</html>

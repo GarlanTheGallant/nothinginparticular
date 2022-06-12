@@ -1,0 +1,97 @@
+body {
+    margin-left: 75px;
+    margin-right: 75px;
+    background-color: #CCCCFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#foreground{
+    display: grid;
+    position:absolute;
+    top:0px;
+    right:50px;
+    bottom:0px;
+    left:50px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: 
+        "hd hd hd hd hd hd hd hd"
+        "in in in in fo fo fo fo"
+        "in in in in fo fo fo fo"
+        "in in in in fo fo fo fo"
+        "ft ft ft ft ft ft ft ft"
+        "ft ft ft ft ft ft ft ft";
+    border-style: solid;
+    border-width: 25px;
+    border-color: white;
+    background-color: white;
+}
+
+header{
+    grid-area: hd;
+}
+
+#info{
+    grid-area: in;
+}
+
+form{
+    grid-area: fo;
+    display: flex;
+    flex-direction: column;
+}
+
+
+img{
+    position: relative;
+    z-index: 10;
+}
+
+
+h2{
+    z-index: 20;
+    border-top-style: solid;
+    border-top-width: 1rem;
+    border-top-color: White;
+    border-bottom-style: solid;
+    border-bottom-width: 1rem;
+    border-bottom-color: White;
+}
+
+#stat{
+    position: absolute;
+    top: 140px;
+    z-index: 30;
+}
+
+label{
+    border-top-style: solid;
+    border-top-width: 15px;
+    border-top-color: white;
+    border-bottom-style: solid;
+    border-bottom-width: 15px;
+    border-bottom-color: white;
+}
+
+#blank{
+    border-top-style: solid;
+    border-top-width: 15px;
+    border-top-color: white;
+    border-bottom-style: solid;
+    border-bottom-width: 15px;
+    border-bottom-color: white;
+}
+
+footer{
+    grid-area: ft;
+}
+
+hr{
+    color: #CCCCFF;
+}
+
+#errors{
+    color: red;
+    text-align: left;
+    font-weight: bold;
+}
+
